@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "yarn run development",
+        "development": "yarn run cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "wa": "yarn run development -- --watch",
+        "watch-poll": "yarn run watch -- --watch-poll",
+        "hot": "yarn run cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "yarn run production",
+        "production": "yarn run cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18",
+        "bootstrap": "^4.1.3",
+        "cross-env": "^5.1",
+        "laravel-mix": "^2.0",
+        "vue": "^2.5.17",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    }
+}
